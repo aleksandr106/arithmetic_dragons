@@ -50,9 +50,10 @@ def start_game():
         print('Добро пожаловать в арифметико-ролевую игру с драконами и троллями!')
         print('Представьтесь, пожалуйста: ', end = '')
         hero = Hero(input())
-        enemy_number = 3
+        x=randint(1,7)
+        enemy_number = x
         enemy_list = generate_enemy_list(enemy_number)
-        assert(len(enemy_list) == 3)
+        assert(len(enemy_list) == x)
         print('У Вас на пути', enemy_number, 'врагов!')
         game_tournament(hero, enemy_list)
     except EOFError:
