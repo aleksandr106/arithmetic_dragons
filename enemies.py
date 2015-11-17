@@ -73,7 +73,7 @@ class ПещерныйTroll(Troll):
         self._attack = 5
         self._color='пещерный тролль'
     def question(self):
-        x = randint(1,6)
+        x = randint(1,5)
         self.__quest ='Угадай число от 1 до 5'
         self.set_answer(x)
         return self.__quest
